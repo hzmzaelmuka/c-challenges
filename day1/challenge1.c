@@ -4,16 +4,16 @@ int main (){
     int age ;
   printf("entre le nom :");
   scanf("%s",nom);
-  printf("entre le prenom  :\n ");
+  printf("\n entre le prenom  : ");
   scanf("%s",prenom);
-  printf("entre le sex :\n");
+  printf("\nentre le sex M ou F :");
   scanf("%s",sex);
-  printf("entre le lage :\n");
+  printf("\nentre le lage  :");
   scanf("%d",&age);
-  printf("entre le email  :\n");
+  printf("\nentre le email  :");
   scanf("%s",email);
 
-printf("\n\nla nom :%s\nle prenom :%s\n le sex est :%s\n lage est :%d\n et la email est %s:" ,nom,prenom,sex,age,email);
+printf("\n\nla nom :%s\nle prenom :%s\n le sex est :%s\nlage est :%d\nle email est %s:" ,nom,prenom,sex,age,email);
 
 
 }
