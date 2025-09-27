@@ -1,14 +1,13 @@
 #include <stdio.h>
+#include <string.h>
 char titre[50][100];//Titre du liver
 char auteur[50][100];//auteur du livre
-int prix[100];
+float prix[100];
 int  quantite[100];
 int  n ;
 int A=0 ;
 
-void recherche(){
 
-}
 void mese_ajour(){
 
 }
@@ -59,7 +58,7 @@ void  afficher(){
         printf("\nlateur de livre   %s", auteur[i]);
   
        
-        printf("\nle prix de livre    %d",prix[i]);
+        printf("\nle prix de livre    %.2f",prix[i]);
     
         printf("\nla contite en stock %d",quantite[i]);
     
@@ -67,6 +66,33 @@ void  afficher(){
     }
 
     
+}
+void recherche(){
+    int B=0;
+    char recherch[20];
+    printf("\nentre le titre de livre pour recherch : ");
+    scanf(" %[^\n]", recherch);
+
+    for(int i = 0 ; i<A;i++){
+
+        if(strcmp(recherch,titre[i])==0 ){
+             printf("\n               ~~~~~~~~~~~~~~~~le nomre de livre et %d~~~~~~~~~~~~~~              \n",i+1);
+        
+         printf("\nle titre de livre   %s",titre[i]);
+    
+      
+         printf("\nlateur de livre   %s", auteur[i]);
+  
+       
+         printf("\nle prix de livre    %.2f",prix[i]);
+    
+         printf("\nla contite en stock %d",quantite[i]);
+         B=1 ;
+        
+        }  
+    }
+    if(B==0)
+         printf("Le live en egsiste pas en stoq");
 }
 
 
